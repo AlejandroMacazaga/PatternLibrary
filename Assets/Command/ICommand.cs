@@ -10,11 +10,11 @@ namespace Command
 
     public abstract class EntityCommand : ICommand
     {
-        protected readonly IEntity entity;
+        protected readonly IEntity Entity;
         
         protected EntityCommand(IEntity entity)
         {
-            this.entity = entity;
+            this.Entity = entity;
         }
         
         public abstract void Execute();
